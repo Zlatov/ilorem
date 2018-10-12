@@ -1,0 +1,9 @@
+{
+  "name": "ilorem",
+  "version": "1.0.0",
+  "description": "Include lorem-text",
+  "main": "/dist/ilorem.js",
+  "repository": "git@github.com:Zlatov/ilorem.git",
+  "author": "iadfeshchm <zlatov@ya.ru>",
+  "license": "MIT"
+}
