@@ -271,7 +271,6 @@
         max = 9
         rand = min + Math.floor((max - min + 1) * Math.random())
         e.innerHTML = lorem[lorem_key][rand]
-        return null
       }
     }
   }
