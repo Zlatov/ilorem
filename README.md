@@ -23,9 +23,5 @@ __Attach script__
 __Add lorem text into tag__
 
 ```
-<p include-lorem="120">
+<p include-lorem="123"></p>
 ```
-
-__Possible lorem lengths now__
-
-1, 2, 3, 5, 10, 11, 12, 13, 15, 20, 30, 50, 100, 110, 120, 130, 150, 200, 300, 500, 1000.

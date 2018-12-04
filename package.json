@@ -1,6 +1,6 @@
 {
   "name": "ilorem",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Include lorem-text",
   "main": "/dist/ilorem.js",
   "repository": "git@github.com:Zlatov/ilorem.git",
