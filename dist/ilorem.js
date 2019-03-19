@@ -95,11 +95,15 @@ if (!Array.prototype.includes) {
     var e   // --//--
     var i   // --//--
     var l   // --//--
-    var lorem_length
+    var lorem_length, has_ilorem
     all = document.getElementsByTagName("*")
     for (i = 0, l = all.length; i < l; i++) {
       e = all[i]
-      lorem_length = e.getAttribute("include-lorem")
+      has_ilorem = e.hasAttribute("include-lorem") || e.hasAttribute("ilorem")
+      if (!has_ilorem) {
+        continue
+      }
+      lorem_length = e.getAttribute("include-lorem") || e.getAttribute("ilorem") || random(2, 100).toString()
       if (
         lorem_length == null ||
         Object.prototype.toString.call(lorem_length) !== "[object String]"
@@ -112,6 +116,10 @@ if (!Array.prototype.includes) {
       }
       e.innerHTML = loremText(lorem_length)
     }
+  }
+
+  window.onload = function() {
+    window.ILorem()
   }
 
 })();
