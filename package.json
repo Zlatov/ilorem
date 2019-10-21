@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "Include lorem-text",
   "main": "/dist/ilorem.js",
-  "repository": "git@github.com:Zlatov/ilorem.git",
+  "repository": "https://git@github.com:Zlatov/ilorem.git",
   "author": "iadfeshchm <zlatov@ya.ru>",
   "license": "MIT"
 }
