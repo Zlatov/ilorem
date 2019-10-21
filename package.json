@@ -1,9 +1,13 @@
 {
   "name": "ilorem",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Include lorem-text",
   "main": "/dist/ilorem.js",
   "repository": "https://git@github.com:Zlatov/ilorem.git",
   "author": "iadfeshchm <zlatov@ya.ru>",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "Lorem ipsum"
+    "placeholder text"
+  ]
 }
