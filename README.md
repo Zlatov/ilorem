@@ -10,8 +10,12 @@ A simple script to insert fish text in the tag. The script allows you to preserv
 
 __Attach script__
 
+```html
+<script type="text/javascript" src="/<your_vendor_path>/dist/ilorem.js"></script>
 ```
-  <script type="text/javascript" src="/<your_vendor_path>/dist/ilorem.js"></script>
+Or with webpack:
+```js
+import "ilorem"
 ```
 
 __Add lorem text into tag__
