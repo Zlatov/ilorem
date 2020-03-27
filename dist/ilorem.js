@@ -89,6 +89,53 @@ if (!Array.prototype.includes) {
     text+= ends[random(0, ends.length - 1)]
     return text
   }
+  function picsum(ilorem_string, i) {
+    var size_x = "300"
+    var size_y = "300"
+    var random = i
+    var seed = ""
+
+    var size_regex = /[123456789]{1}\d{0,3}x[123456789]{1}\d{0,3}/i
+    var size_exist = size_regex.test(ilorem_string)
+    if (size_exist) {
+      var size = ilorem_string.match(size_regex)
+      if (size != null && size[0] != null) {
+        var size_array = size[0].split(/x/i)
+        if (size_array[0] != null && size_array[1] != null) {
+          [size_x, size_y] = size_array
+        }
+      }
+    }
+
+    var random_regex = /random=\d+/i
+    if (random_regex.test(ilorem_string)) {
+      var ilorem_random = ilorem_string.match(random_regex)
+      if (ilorem_random != null && ilorem_random[0] != null) {
+        ilorem_random = ilorem_random[0].match(/\d/)
+        if (ilorem_random != null && ilorem_random[0] != null) {
+          random = ilorem_random[0]
+        }
+      }
+    }
+
+    var seed_regex = /seed=[^&]+/i
+    if (seed_regex.test(ilorem_string)) {
+      var ilorem_seed = ilorem_string.match(seed_regex)[0]
+      ilorem_seed = ilorem_seed.match(/=([^&]+)/)[1]
+      if (ilorem_seed != null && Object.prototype.toString.call(ilorem_seed) === '[object String]') {
+        seed = ilorem_seed
+      }
+    }
+
+    var picsum = "https://picsum.photos/"
+    if (seed.length > 0) {
+      picsum += "seed/" + seed + "/"
+    }
+    picsum += size_x + "/" + size_y
+    picsum += "?random=" + random
+
+    return picsum
+  }
 
   window.ILorem = function() {
     var all // DOM элементы
@@ -103,7 +150,12 @@ if (!Array.prototype.includes) {
       if (!has_ilorem) {
         continue
       }
-      lorem_length = e.getAttribute("include-lorem") || e.getAttribute("ilorem") || random(2, 100).toString()
+      var ilorem_value = e.getAttribute("include-lorem") || e.getAttribute("ilorem")
+      if (e.tagName == "IMG") {
+        e.setAttribute("src", picsum(ilorem_value, i))
+        continue
+      }
+      lorem_length = ilorem_value || random(2, 100).toString()
       if (
         lorem_length == null ||
         Object.prototype.toString.call(lorem_length) !== "[object String]"

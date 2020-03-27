@@ -20,8 +20,14 @@ import "ilorem"
 
 __Add lorem text into tag__
 
-```
-<p include-lorem="123"></p>
+```html
+<p ilorem></p>                <!-- Text from sentences consisting of 2-100 random words. -->
+<p ilorem=123></p>            <!-- Text from sentences consisting of 123 random words. -->
 <p ilorem="123"></p>
-<p ilorem></p> <!-- Random 2–100 words. -->
+<p include-lorem="123"></p>
+
+<img ilorem>                           <!-- 300x300 random image. -->
+<img ilorem=640x480></p>               <!-- 640x480 random image. -->
+<img ilorem=seed=user1></p>            <!-- 300x300 static image corresponding to seed "user1". -->
+<img ilorem="800x200?seed=user1"></p>  <!-- 800x200 static image corresponding to seed "user1". -->
 ```
