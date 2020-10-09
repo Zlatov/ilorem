@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,22 @@
   <title>Test ilorem</title>
   <script type="text/javascript" src="../dist/ilorem.js"></script>
 </head>
+
 <body>
   <p ilorem></p>
   <p ilorem=2></p>
-  <p><img ilorem></p>
-  <p><img ilorem="100x100?seed=asd"></p>
-  <p><img ilorem="640x480?seed=asd"></p>
-  <p><img ilorem=seed=asd></p>
-  <p><img ilorem=seed=zxc></p>
-  <p><img ilorem=seed=qwe></p>
-
-  <img ilorem>
-  <img ilorem=640x480>
-  <img ilorem=seed=user1>
-  <img ilorem="640x480?seed=user1">
+  <ol>
+    <li><img ilorem> — случайное изображение 300x300;</li>
+    <li><img ilorem> — случайное изображение 300x300;</li>
+    <li><img ilorem=640x480> — случайное изображение 640x480;</li>
+    <li><img ilorem="100x100?seed=asd"> — фиксированное изображение "asd" 100x100;</li>
+    <li><img ilorem="640x480?seed=asd"> — фиксированное изображение "asd" 640x480;</li>
+    <li><img ilorem=seed=asd> — фиксированное изображение "asd" 300x300;</li>
+    <li><img ilorem=seed=zxc> — фиксированное изображение "zxc" 300x300;</li>
+    <li><img ilorem=seed=qwe> — фиксированное изображение "qwe" 300x300;</li>
+    <li><img ilorem=seed=user1> — фиксированное изображение "user1" 300x300;</li>
+    <li><img ilorem=640x480?seed=user1> — фиксированное изображение "user1" 640x480.</li>
+  </ol>
 </body>
+
 </html>
