@@ -1,5 +1,5 @@
 {
-  "name": "ilorem",
+  "name": "@zlatov/ilorem",
   "version": "1.2.1",
   "description": "Include lorem-text, picsum images",
   "main": "/dist/ilorem.js",
@@ -17,6 +17,6 @@
     "dist/**/*"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/zlatov"
   }
 }
