@@ -4,7 +4,7 @@
   "description": "Include lorem-text, picsum images",
   "main": "/dist/ilorem.js",
   "homepage": "http://ilorem.zlatov.net",
-  "repository": "https://git@github.com:Zlatov/ilorem.git",
+  "repository": "git://github.com/zlatov/ilorem.git",
   "author": "iadfeshchm <zlatov@ya.ru>",
   "license": "MIT",
   "keywords": [
@@ -16,5 +16,7 @@
   "files": [
     "dist/**/*"
   ],
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
