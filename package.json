@@ -4,7 +4,7 @@
   "description": "Include lorem-text, picsum images",
   "main": "/dist/ilorem.js",
   "homepage": "http://ilorem.zlatov.net",
-  "repository": "git://github.com/zlatov/ilorem.git",
+  "repository": "git://github.com/Zlatov/ilorem.git",
   "author": "iadfeshchm <zlatov@ya.ru>",
   "license": "MIT",
   "keywords": [
