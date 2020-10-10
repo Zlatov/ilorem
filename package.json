@@ -1,6 +1,6 @@
 {
   "name": "ilorem",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Include lorem-text, picsum images",
   "main": "/dist/ilorem.js",
   "homepage": "http://ilorem.zlatov.net",
