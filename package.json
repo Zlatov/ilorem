@@ -1,6 +1,6 @@
 {
   "name": "@zlatov/ilorem",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Include lorem-text, picsum images",
   "main": "/dist/ilorem.js",
   "homepage": "http://ilorem.zlatov.net",
@@ -17,6 +17,6 @@
     "dist/**/*"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/zlatov"
+    "registry": "https://npm.pkg.github.com"
   }
 }
