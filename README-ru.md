@@ -1,7 +1,9 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e97e6900c72c467fb3bf9aea7c96fc17)](https://www.codacy.com/manual/Zlatov/ilorem/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Zlatov/ilorem&amp;utm_campaign=Badge_Grade)
+
 __Выбрать язык README.md__
 
-- en [English](README.md)
-- ru [Русский](README-ru.md)
+-   en [English](README.md)
+-   ru [Русский](README-ru.md)
 
 
 # ILorem
@@ -11,11 +13,9 @@ __Выбрать язык README.md__
 
 Для вставки изображений используется сервис [picsum.photos](https://picsum.photos).
 
-
 ## Установка
 
 `yarn add ilorem`
-
 
 ## Использование
 
