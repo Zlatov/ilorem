@@ -1,10 +1,10 @@
 {
-  "name": "@zlatov/ilorem",
-  "version": "1.2.3",
+  "name": "ilorem",
+  "version": "1.2.4",
   "description": "Include lorem-text, picsum images",
   "main": "/dist/ilorem.js",
   "homepage": "http://ilorem.zlatov.net",
-  "repository": "git://github.com/Zlatov/ilorem.git",
+  "repository": "https://git@github.com:Zlatov/ilorem.git",
   "author": "iadfeshchm <zlatov@ya.ru>",
   "license": "MIT",
   "keywords": [
@@ -15,8 +15,5 @@
   ],
   "files": [
     "dist/**/*"
-  ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  ]
 }
