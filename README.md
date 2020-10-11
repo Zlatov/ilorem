@@ -2,8 +2,8 @@
 
 __Select language README.md__
 
--  en [English](README.md)
--  ru [Русский](README-ru.md)
+-   en [English](README.md)
+-   ru [Русский](README-ru.md)
 
 # ILorem
 
